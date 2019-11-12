@@ -27,6 +27,9 @@ function flipCoin() {
 flipCoin
 echo "-----" $headCount
 headPercent=$(( $headCount * 100 / $loopingtime ))
+tailPercent=$(( ( $loopingtime - $headCount ) * 100 / $loopingtime ))
+
 echo ${flipcoinresults[@]}
 echo "percentage of getting head is" $headPercent
+echo "percentage of getting head is" $tailPercent
 
